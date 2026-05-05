@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<link rel="stylesheet" href="style.css">	<!-- esto "linkea" el estilo con la hoja correspondiente-->
+		<script src="script.js" defer></script>		<!-- para tener los SCRIPTS en otro archivo, como con el CSS-->
+		<h1>
+			Benjamín Fernando Echeverría Vargas
+		</h1>
+		<h3>
+			Ingeniería Civil en Informática -- Universidad Finis Terrae	
+		</h3>
+		<nav>
+			<link>benjaminecheverria2002@gmail.com -- +56978819802	
+		</nav>
+		</h3>
+			linkedin.com/in/benjamínecheverríavargas/ -- github.com/monololasion	
+		</h3>
+	</head>
+	<body>
+		<h3>
+		Perfil Profesional
+		</h3>
+
+		<p>
+		Estudiante de quinto año de Ingeniería Civil en Ingeniería, con interés en el desarrollo tecnológico y la aplicación práctica de la informática. Sin experiencia laboral previa en el área,
+pero con diversas experiencias en otros rubros que fortalecen habilidades como responsabilidad,
+trabajo en equipo y resolución de problemas. 
+		</p>
+
+		<h3>
+			Habilidades Técnicas
+		</h3>
+		<ul>
+			<li><strong>Lenguajes:</strong> Python (Avanzado/Proyectos), SQL, C R.</li>
+			<li> <strong> IA y Algoritmos:</strong> Implementación de busqueda *A, Heurísticas, Estructuras de datos.</li>
+			<li><strong>Herramientas:</strong> Git, Github, PyGame, Tkinter, RStudio, LaTeX.</li>
+			<li><strong>Soft Skills:</strong> Innovación técnica, Trabajo colaborativo, Tutoría pedagógica.</li>
+		</ul>
+
+		<h3>
+			Logros y Proyectos Destacados
+		</h3>
+		<ul>
+			<li><strong>3er Lugar en Innovación - Rally Latinoamericano de Innovación 2025</strong> Proyecto: Aprovechamiento de Tetra Pak para Paneles Acústicos (IntegraMind). Diseño de
+				una solución de economía circular utilizando PolyAl y materiales reciclados para la creación
+				de resonadores acústicos de bajo costo.</li>
+			<li> <strong>Color Tube Challenge</strong> Desarrollo de videojuego completo que incluye un Solver basado en el algoritmo A*
+				para resolución automática. Implementación de animaciones fluidas, menús de configuración
+				y gestión de estados de juego.</li>
+			<li><strong>Videojuego: Combat Crew: </strong> Diseño y programación de la lógica de combate, gestión de personajes y optimización de
+				scripts.</li>
+			
+		</ul>
+		<h3>
+			Formación Académica
+		</h3>
+		<ul>
+			<li><strong>Universidad Finis Terrae</strong> Ingeniería Civil en Informática 2021 a la Actualidad.</li>
+			<li> <strong>Istituto Presidente Errázuriz</strong> Educación media y básica de 2014 a 2020.</li>
+			<li><strong>Hogar Español </strong> Educación básica de 2008 a 2013.</li>
+			
+		</ul
+		<p>
+		
+		</p>
+		<div>
+			<mi-saludo></mi-saludo>
+		</div>
+	</body>
+</html>
+
+<script>
+	// Crear la lógica (Javascript)
+	class MiComponente extends HTMLElement {
+		connectedCallback() {
+			this.innerHTML = `<p>Hola, esto es un componente!</p>`;
+		}
+	}
+
+	// Registrar la lógica (debe tener "-" en vez de espacios)
+	customElements.define('mi-saludo', MiComponente);
+
+	// Usar funciones
+	function mensaje() {
+		alert("Hola, soy el JavaScript interno!");
+	}
+
+	// Escribir en consola
+	console.log("Muchas cosas!");
+
+</script>
