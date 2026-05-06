@@ -1,0 +1,28 @@
+p {
+  color: black;        /* Cambiar color de texto  */
+  font-size: 16px;      /* cambiar tamaño de letra a 16 píxeles */
+}
+
+h1 {
+  color: purple;
+  font-style: italic;
+}
+
+mi-saludo {
+ color: green;
+}
+
+.foto-derecha {
+    float: right;
+    width: 150px;
+    height: auto;
+    border-radius: 50%; /* 50% siempre hace un círculo perfecto */
+
+    /* AJUSTE VERTICAL */
+    margin-top: -140px; 
+
+    /* AJUSTE HORIZONTAL */
+    margin-right: 200px;  /* La separa del borde derecho (la mueve a la IZQUIERDA) */
+    /* O TAMBIÉN */
+    margin-right: 555px; /* La pega más al borde derecho (la mueve a la DERECHA) */
+}

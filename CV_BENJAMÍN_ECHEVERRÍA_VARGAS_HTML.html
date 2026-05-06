@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>CV - Benjamín Echeverría</title>
+        <link rel="stylesheet" href="style.css">    <!-- esto "linkea" el estilo con la hoja correspondiente-->
+        <script src="script.js" defer></script>     <!-- para tener los SCRIPTS en otro archivo, como con el CSS-->
+    </head>
+    <body>
+        <header>
+            <h1>
+                Benjamín Fernando Echeverría Vargas
+            </h1>
+            <h3>
+                Ingeniería Civil en Informática y Telecomunicaciones -- Universidad Finis Terrae 
+            </h3>
+            <nav>
+                <a href="mailto:benjaminecheverria2002@gmail.com">benjaminecheverria2002@gmail.com</a> -- +56978819802 
+                <br>
+                <a href="https://linkedin.com/in/benjamínecheverríavargas/" target="_blank">linkedin.com/in/benjamínecheverríavargas/</a> -- 
+                <a href="https://github.com/monololasion" target="_blank"> github.com/monololasion</a> 
+            </nav>
+			<img src="Foto_Perfil.jpg" alt="Foto Perfil" class="foto-derecha">
+        </header>
+
+        <h3>
+            Perfil Profesional
+        </h3>
+        <p>
+            Estudiante de quinto año de Ingeniería Civil en Informática y Telecomunicaciones. Profesional proactivo con experiencia en el sector asegurador, especializado en la automatización de procesos financieros y desarrollo de soluciones de software internas enfocadas en la eficiencia operativa y experiencia de usuario (UX/UI).
+        </p>
+
+        <h3>
+            Experiencia Laboral Relevante
+        </h3>
+        <ul>
+            <li>
+                <strong>FID Seguros</strong> (Enero 2026 -- Actualidad)
+                <br>
+                <em>Analista de Control y Automatización Financiera</em>
+                <ul>
+                    <li>Diseño y construcción de aplicaciones internas utilizando el ecosistema de Power Platform.</li>
+                    <li>Automatización de flujos de trabajo y reportes financieros para optimizar el manejo de datos.</li>
+                    <li>Desarrollo de un repositorio de proyectos automatizado con Power Apps, Power Automate y SharePoint.</li>
+                    <li>Implementación de soluciones bajo enfoque UX/UI para mejorar la interacción del equipo con herramientas digitales.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>
+            Habilidades Técnicas
+        </h3>
+        <ul>
+            <li><strong>Lenguajes:</strong> Python (Avanzado), SQL, C, R, Power Fx.</li>
+            <li><strong>Automatización:</strong> Power Apps, Power Automate, SharePoint, Automatización de flujos.</li>
+            <li><strong>IA y Algoritmos:</strong> Implementación de búsqueda A*, Heurísticas, Machine Learning.</li>
+            <li><strong>Herramientas:</strong> Git, Github, PyGame, Tkinter, LaTeX, RStudio.</li>
+        </ul>
+
+        <h3>
+            Logros y Proyectos Destacados
+        </h3>
+        <ul>
+            <li><strong>3er Lugar en Innovación - Rally Latinoamericano de Innovación 2025:</strong> Proyecto: IntegraMind. Diseño de paneles acústicos utilizando materiales reciclados (Tetra Pak) bajo principios de economía circular.</li>
+            <li><strong>Color Tube Challenge Solver:</strong> Desarrollo de un Solver basado en el algoritmo A* en Python para la resolución automática de estados del juego.</li>
+            <li><strong>Videojuego: Combat Crew:</strong> Diseño y programación de la lógica de combate, gestión de personajes y optimización de scripts.</li>
+        </ul>
+
+        <h3>
+            Formación Académica
+        </h3>
+        <ul>
+            <li><strong>Universidad Finis Terrae:</strong> Ingeniería Civil en Informática y Telecomunicaciones (5to año), 2021 a la Actualidad.</li>
+            <li><strong>Istituto Presidente Errázuriz:</strong> Educación media y básica de 2014 a 2020.</li>
+        </ul>
+
+        <h3>
+            Otras Experiencias
+        </h3>
+        <ul>
+            <li><strong>Administración de Condominio Echeñique 5500:</strong> 2022 -- Actualidad.</li>
+            <li><strong>Tutoría de Matemáticas Universitarias:</strong> 2024.</li>
+            <li><strong>Licencias de Conducir:</strong> Profesional Clase B.</li>
+        </ul>
+
+        <div>
+            <mi-saludo></mi-saludo>
+        </div>
+
+        <script>
+            class MiComponente extends HTMLElement {
+                connectedCallback() {
+                    this.innerHTML = `<p></p>`;
+                }
+            }
+
+            if (!customElements.get('mi-saludo')) {
+                customElements.define('mi-saludo', MiComponente);
+            }
+
+            console.log("¡Carga de CV completa!");
+        </script>
+    </body>
+</html>
